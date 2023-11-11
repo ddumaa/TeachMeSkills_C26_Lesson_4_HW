@@ -1,5 +1,6 @@
 package homework;
 
+//comparing two arrays for the total sum of numbers
 
 public class HW3 {
     public static void main(String[] args) {
