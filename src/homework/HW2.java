@@ -17,11 +17,13 @@ public class HW2 {
             int b = 100;
             arrayMy[i] = a + (int) (Math.random() * b);
         }
+
         Arrays.sort(arrayMy);
         int lengthArray = arrayMy.length - 1;
         System.out.println(Arrays.toString(arrayMy));
         System.out.println("largest value in the array: " + arrayMy[lengthArray]);
         System.out.println("smallest value in the array: " + arrayMy[0]);
+
         //looking for the number in the center of the array
         int middle2 = arrayMy[lengthArray / 2];
         //looking for the position of the number
@@ -30,6 +32,7 @@ public class HW2 {
         int middle = (arrayMy[lengthArray] - arrayMy[0]) / 2 + arrayMy[0];
         //variable for the result
         int middlepostionresult;
+
         //loop to find the average in an array
         for (int i = 0; i < arrayMy[lengthArray]; i++) {
             //we check whether the real average is greater than or equal to the number in position
