@@ -8,6 +8,10 @@ public class HWadditional7 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter array size");
         int sizeArray = scanner.nextInt();
+        if (sizeArray <=0){
+            sizeArray = 10;
+            System.out.println("An incorrect array size was entered, the value was set to 10.");
+        }
         int[] array1 = new int[sizeArray];
         for (int i = 0; i < array1.length; i++) {
             int a = 0;
