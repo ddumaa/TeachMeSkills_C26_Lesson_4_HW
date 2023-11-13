@@ -17,16 +17,29 @@ public class HWadditional4 {
             System.out.println("Enter correct input parameters");
             return;
         }
+
         int [] array1 = new int[input];
-        int [] array2 = new int[input];
+
+        int odd = 0;
         for (int i = 0; i < input; i++) {
             int a = 0;
             int b = 100;
             array1[i] = a + (int) (Math.random() * b);
-            if(array1[i] %2 == 0){
-                array2[i] = array1[i];
+            if (array1[i] %2 != 0){
+                odd++;
             }
         }
+
+        int [] array2 = new int[array1.length-odd];
+        int position = 0;
+
+        for (int i = 0; i < array1.length; i++) {
+            if (array1[i] %2 == 0) {
+                array2[position] = array1[i];
+                position++;
+            }
+        }
+        System.out.println(Arrays.toString(array1));
         System.out.println(Arrays.toString(array2));
     }
 }
