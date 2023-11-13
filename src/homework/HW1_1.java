@@ -10,7 +10,7 @@ public class HW1_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter a number to search and delete");
         int a = scanner.nextInt();
-        int[] numbers = {7, 8, 15, 24, 8, 10, 48, 36};
+        int[] numbers = {7, 8, 15, 24, 8, 10, 7, 15};
 
         Arrays.sort(numbers);
         int out = Arrays.binarySearch(numbers, a);
